@@ -4,6 +4,7 @@
   "description": "Esse é um projeto no qual as tecnologias que serão implementadas na API do Brsas serão testadas, para posteriormente serem implementadas no projeto oficial",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jesse.js",
@@ -14,5 +15,8 @@
     "git-commit-msg-linter": "^4.1.3",
     "knex": "^2.1.0",
     "tedious": "^14.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }
