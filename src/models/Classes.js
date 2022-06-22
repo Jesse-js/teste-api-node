@@ -14,7 +14,7 @@ const selectClassesOfTeacher = (tenant, teacher_id, unity) => {
             WHERE T.ESTADO = 1 --turma vigente
                 AND T.UNIDADE = ${unity}
                 AND T.TERMINO > GETDATE()
-                AND (T.PROFESSOR = ${teacher_id} --professor selecionado
+                AND (T.PROFESSOR = ${teacher_id} --selected teacher
                     OR
                     EXISTS (SELECT TP.PROFESSOR 
                             FROM SCL${tenant}.SCL.TU_PLAN TP WITH(NOLOCK) 

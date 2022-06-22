@@ -6,7 +6,7 @@ const getClasses = (req, res) => {
     let unity_id   = req.query.unity;
     Classes
            .selectClassesOfTeacher(tenant, teacher_id, unity_id)
-           .then((results) => res.status(202).json(results));  
+           .then((results) => res.json(results));  
     
 };
 
